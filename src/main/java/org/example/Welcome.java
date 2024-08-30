@@ -7,8 +7,8 @@ public class Welcome {
 
     private final LocalDateTime dateTime;
 
-    public Welcome(LocalDateTime dateTime) {
-        this.dateTime = dateTime;
+    public Welcome(TimeMaster timeMaster) {
+        this.dateTime = timeMaster.getTime();
     }
 
     public String getMessage() {
